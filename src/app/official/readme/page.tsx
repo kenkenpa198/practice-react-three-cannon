@@ -1,6 +1,6 @@
 "use client";
 
-import { Physics, useBox } from "@react-three/cannon";
+import { Debug, Physics, useBox } from "@react-three/cannon";
 import { Canvas } from "@react-three/fiber";
 
 function Cube(props) {
@@ -24,7 +24,7 @@ function App() {
         style={{
           width: "90vw",
           height: "80vh",
-          background: "#f9f9f9",
+          background: "#000000",
         }}
       >
         {/* Physics には物理関連のオブジェクトを入れる */}
