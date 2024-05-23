@@ -13,7 +13,10 @@ function Cube(props) {
     // メッシュ、ライン、gltf、その他何でもよいオブジェクトを取得し、参照 (ref) に結び付ける。
     // これで重力や物理世界内の他のオブジェクトの影響を受けるようになる。
     <mesh ref={ref}>
+      {/* 箱のジオメトリ */}
       <boxGeometry />
+      {/* 箱の色 */}
+      <meshStandardMaterial color="orange" />
     </mesh>
   );
 }
@@ -25,7 +28,10 @@ function Plane(props) {
   const [ref] = usePlane(() => ({ rotation: [-Math.PI / 2, 0, 0], ...props }));
   return (
     <mesh ref={ref}>
-      <planeGeometry args={[100, 100]} />
+      {/* 平面のジオメトリとサイズ */}
+      <planeGeometry args={[5, 5]} />
+      {/* 地面の色 */}
+      <meshStandardMaterial color="green" />
     </mesh>
   );
 }
