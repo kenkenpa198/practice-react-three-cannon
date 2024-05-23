@@ -9,6 +9,9 @@ function App() {
         <li>
           <Link href="/official/readme">Official README</Link>
         </li>
+        <li>
+          <Link href="/official/readme-modded">Official README modded</Link>
+        </li>
       </ul>
       <h2>Reference</h2>
       <ul>
